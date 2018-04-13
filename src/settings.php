@@ -1,12 +1,13 @@
 <?php
+
 return [
     'settings' => [
-        'displayErrorDetails' => true,
+        'displayErrorDetails' => ((bool)$_ENV['DEBUG']),
         'addContentLengthHeader' => false,
 
         'renderer' => [
             'template_path' => __DIR__ . '/../templates/',
-            'use_cache' => false,
+            'use_cache' => !((bool)$_ENV['DEBUG']),
             'cache_path' => __DIR__ . '/../.cache/',
         ],
 

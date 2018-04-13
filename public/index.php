@@ -9,6 +9,8 @@ if(PHP_SAPI == 'cli-server') {
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+(new \Dotenv\Dotenv(__DIR__ . '/../'))->load();
+
 session_start();
 
 $settings = require_once __DIR__ . '/../src/settings.php';

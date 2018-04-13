@@ -2,3 +2,5 @@
 /vendor/
 /logs
 /.cache
+.env
+

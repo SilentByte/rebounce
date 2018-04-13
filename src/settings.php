@@ -6,6 +6,8 @@ return [
 
         'renderer' => [
             'template_path' => __DIR__ . '/../templates/',
+            'use_cache' => false,
+            'cache_path' => __DIR__ . '/../.cache/',
         ],
 
         'logger' => [

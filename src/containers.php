@@ -2,9 +2,13 @@
 
 $container = $app->getContainer();
 
-$container['renderer'] = function($c) {
+$container['view'] = function($c) {
     $settings = $c->get('settings')['renderer'];
-    return new Slim\Views\PhpRenderer($settings['template_path']);
+    $view = new \Slim\Views\Twig($settings['template_path'], [
+        'cache' => $settings['use_cache'] ? $settings['cache_path'] : false
+    ]);
+
+    return $view;
 };
 
 $container['logger'] = function($c) {

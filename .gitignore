@@ -4,5 +4,6 @@
 /logs
 /.cache
 /public/assets
+/public/favicon.ico
 .env
 

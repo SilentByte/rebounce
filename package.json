@@ -4,7 +4,7 @@
   "description": "Open endpoints for testing restful services.",
   "main": "index.js",
   "scripts": {
-    "build": "gulp build",
+    "build": "npm install && composer install && gulp build",
     "dev": "concurrently --kill-others \"gulp watch\" \"php -S localhost:8080 -t public\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

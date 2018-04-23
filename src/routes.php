@@ -10,3 +10,12 @@ $app->get('/', function(Request $request, Response $response, array $args) {
         'title' => 'Rebounce • Online'
     ]);
 });
+
+
+$app->get('/ip', function(Request $request, Response $response, array $args) {
+    $ip = $request->getServerParam('REMOTE_ADDR');
+    return $response->withJson([
+        'ip' => $ip
+    ]);
+});
+

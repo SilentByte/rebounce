@@ -22,14 +22,14 @@ $app->get('/', function(Request $request, Response $response, array $args) {
     ]);
 });
 
-$app->get('/ip', function(Request $request, Response $response, array $args) {
+$app->get('/api/ip', function(Request $request, Response $response, array $args) {
     $ip = $request->getServerParam('REMOTE_ADDR');
     return $response->withJson([
         'ip' => $ip,
     ]);
 });
 
-$app->post('/echo', function(Request $request, Response $response, array $args) {
+$app->post('/api/echo', function(Request $request, Response $response, array $args) {
     $headers = $request->getHeaders();
     foreach($headers as $name => $value) {
         $response = $response->withHeader("X-Echo-$name", $value);

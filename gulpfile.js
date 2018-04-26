@@ -61,12 +61,20 @@ gulp.task('images', (cb) => {
     ], cb);
 });
 
+gulp.task('data', (cb) => {
+    pump([
+        gulp.src('./assets/data/**/*'),
+        gulp.dest('./public/assets/data/'),
+    ], cb);
+});
+
 gulp.task('build', [
     'html',
     'stylus',
     'bootstrap',
     'js',
     'images',
+    'data',
 ]);
 
 gulp.task('watch', ['build'], () => {

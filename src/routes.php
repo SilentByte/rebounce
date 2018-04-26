@@ -25,4 +25,5 @@ $app->get('/', function(Request $request, Response $response, array $args) {
 require_once __DIR__ . '/api/ip.php';
 require_once __DIR__ . '/api/echo.php';
 require_once __DIR__ . '/api/time.php';
+require_once __DIR__ . '/api/cat.php';
 

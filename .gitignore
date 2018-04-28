@@ -1,0 +1,10 @@
+/.idea
+/node_modules
+/vendor
+/logs
+/.cache
+/public/assets
+/public/favicon.ico
+/templates
+.env
+

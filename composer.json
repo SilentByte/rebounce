@@ -1,0 +1,29 @@
+{
+    "name": "silentbyte/rebounce",
+    "description": "Web app providing open endpoints for testing restful services.",
+    "keywords": [
+        "tester",
+        "tool",
+        "restful",
+        "services"
+    ],
+    "homepage": "https://github.com/SilentByte/rebounce",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rico A. Beti",
+            "email": "rico.beti@silentbyte.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17",
+        "slim/twig-view": "^2.3",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "scripts": {
+        "dev": "php -S localhost:8080 -t public"
+    }
+}

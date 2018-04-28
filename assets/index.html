@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--suppress HtmlUnknownTarget -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Open endpoints for testing restful services.">
+    <meta name="author" content="SilentByte">
+    <meta name="theme-color" content="#cc6767">
+
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Quicksand:400,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/rebounce.css">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body id="page-top">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="#page-top">
+            <span class="d-block d-lg-none brand">{{ title }}</span>
+            <span class="d-none d-lg-block">
+                <img class="img-fluid img-brand mx-auto mb-2"
+                     src="/assets/images/brand.png"
+                     alt="{{ title }}">
+            </span>
+        </a>
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#nav-content"
+                aria-controls="nav-content"
+                aria-expanded="false"
+                aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav-content" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#page-top">Rebounce</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#docs">Docs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid p-0">
+        <section class="p-3 p-lg-5 d-flex d-column">
+            <div class="m-auto">
+                <h1 class="mt-5 mb-0 text-center">
+                    Rebounce<br />
+                    <span class="text-primary">Online</span>
+                </h1>
+                <div class="subheading text-center mt-5 mb-5">
+                    Open Endpoints for Testing Restful Services
+                </div>
+            </div>
+        </section>
+        <section id="about" class="p-3 p-lg-5 d-flex flex-column">
+            <div class="section-content">
+                <div class="col-xl-10 offset-xl-1">
+                    <h2 class="my-5">About</h2>
+                    <div class="content d-flex flex-md-row mb-5">
+                        <div class="mr-auto">
+                            <p>
+                                <strong>Rebounce <span class="text-primary">Online</span></strong> provides a number of
+                                RESTful endpoints that are freely available for testing connectivity of apps and their
+                                ability to parse responses in various formats. The site implements CORS and thus allows
+                                incoming cross-domain requests from browser JavaScript APIs. This is a tool that is
+                                intended to lend a helping hand during early development cycles. Available endpoints are
+                                listed in the <a href="#docs">Docs</a>.
+                            </p>
+                            <p class="text-center">
+                                <span class="inline-code-lg">$ curl -L rebounce.online/api/time</span>
+                            </p>
+                            <div class="subheading mb-3">What are the Restrictions?</div>
+                            <p>
+                                You are welcome to use the available endpoints for your own (testing) purposes, but you
+                                need to be aware of the fact that no guarantees are being made in terms of correctness
+                                and availability. Also, please keep the traffic down to a minimum. ;-)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="docs" class="p-3 p-lg-5 d-flex flex-column">
+            <div class="section-content">
+                <div class="col-xl-10 offset-xl-1">
+                    <h2 class="my-5">Docs</h2>
+                    <div class="content d-flex flex-md-row mb-5">
+                        <div class="mr-auto">
+                            <h3 class="mb-0">API Reference</h3>
+                            <div class="subheading mb-3">Work in Progress&hellip;</div>
+                            <p>&hellip;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="p-3 p-lg-5 d-flex flex-column">
+            <div class="section-content">
+                <div class="col-xl-10 offset-xl-1">
+                    <div class="content row my-5">
+                        <div class="col text-center mb-5">
+                            <a class="contact-link" href="https://github.com/SilentByte" target="_blank">
+                                <i class="fab fa-github-alt"></i>
+                                <br><strong>@silentbyte</strong>
+                            </a>
+                        </div>
+                        <div class="col text-center mb-5">
+                            <a class="contact-link" href="mailto:info@rebounce.online">
+                                <i class="fas fa-envelope"></i>
+                                <br><strong>info@rebounce.online</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col my-4 text-center">
+            Provided with <i class="fas fa-heart text-primary"></i> in 2018 by
+            <a href="https://github.com/SilentByte" target="_blank"><strong>SilentByte</strong></a>
+        </div>
+    </div>
+    <script src="/assets/js/rebounce.js"></script>
+</body>
+</html>

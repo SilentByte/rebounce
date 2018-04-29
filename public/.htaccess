@@ -6,3 +6,28 @@ AddHandler application/x-httpd-php72 .php
   RewriteRule ^ index.php [QSA,L]
 </IfModule>
 
+# Enable GZIP Compression.
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+# Set Expiration Times.
+<IfModule mod_expires.c>
+	ExpiresActive On 
+	ExpiresDefault "access plus 1 month"
+
+	ExpiresByType image/x-icon "access plus 1 month"
+	ExpiresByType image/gif "access plus 1 month"
+	ExpiresByType image/png "access plus 1 month"
+	ExpiresByType image/jpg "access plus 1 month"
+	ExpiresByType image/jpeg "access plus 1 month"
+
+	ExpiresByType text/css "access 1 month"
+	ExpiresByType application/javascript "access plus 1 month"
+</IfModule>

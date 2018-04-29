@@ -87,10 +87,10 @@
                                 intended to lend a helping hand during early development cycles. Available endpoints are
                                 listed in the <a href="#docs">Docs</a>.
                             </p>
-                            <p class="text-center">
+                            <p class="text-center mt-4">
                                 <span class="inline-code-lg">$ curl -L rebounce.online<wbr>/api/time</span>
                             </p>
-                            <div class="subheading mb-3">What are the Restrictions?</div>
+                            <div class="subheading mt-5 mb-3">What are the Restrictions?</div>
                             <p>
                                 You are welcome to use the available endpoints for your own (testing) purposes, but you
                                 need to be aware of the fact that no guarantees are being made in terms of correctness
@@ -107,10 +107,80 @@
                     <h2 class="my-5">Docs</h2>
                     <div class="content mb-5">
                         <div class="mr-auto">
-                            <h3 class="mb-0">API Reference</h3>
-                            <div class="subheading mb-3">Work in Progress&hellip;</div>
-                            <p>&hellip;</p>
+                            <h3>API Reference</h3>
+                            The restful API endpoints are still a work in progress, and so is their documentation.
+                            However, a few are already available for use and new routes will be added over time.
+                            <strong>Check back again in a bit fore more options!</strong>
+
+                            <div class="card mt-4">
+                                <div class="card-header">
+                                    <div class="subheading">
+                                        <span class="endpoint"><b>POST</b> /api/echo</span>
+                                        <span class="badge badge-primary float-right mt-1">New</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    Echoes POST data (including headers) back to the sender. Response content and
+                                    content type depend on the request.
+                                    <div class="code-block">
+                                        <div>Response <code>varying</code></div>
+                                        <pre><code>{"text": "Hello, World!"}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mt-4">
+                                <div class="card-header">
+                                    <div class="subheading">
+                                        <span class="endpoint"><b>GET</b> /api/time</span>
+                                        <span class="badge badge-primary float-right mt-1">New</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    Returns the current UTC time in ISO-8601 format with timezone information.
+                                    <div class="code-block">
+                                        <div>Response <code>application/json</code></div>
+                                        <pre><code>{"time": "2018-04-29T10:12:34+02:00"}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mt-4">
+                                <div class="card-header">
+                                    <div class="subheading">
+                                        <span class="endpoint"><b>GET</b> /api/ip</span>
+                                        <span class="badge badge-primary float-right mt-1">New</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    Returns the sender's IPv4 address.
+                                    <div class="code-block">
+                                        <div>Response <code>application/json</code></div>
+                                        <pre><code>{"ip": "10.0.0.1"}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mt-4">
+                                <div class="card-header">
+                                    <div class="subheading">
+                                        <span class="endpoint"><b>GET</b> /api/cats/{id}</span>
+                                        <span class="badge badge-primary float-right mt-1">New</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    Returns a picture of a cute kitten based on his/her ID (#0 is mine).
+                                    <div class="code-block">
+                                        <div>Response <code>image/jpeg</code></div>
+                                        <img src="/api/cats/0" width="400" class="img-thumbnail">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                        <p class="text-center mt-5 subheading">
+                            More routes will be available soon!
+                        </p>
                     </div>
                 </div>
             </div>

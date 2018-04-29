@@ -4,6 +4,7 @@
 
 $heading-font = Quicksand, sans-serif
 $content-font = 'Open Sans', sans-serif
+$code-font = Consolas, Monaco, monospace
 
 $primary-color = #cc6767
 $primary-highlight-color = #a75454
@@ -78,8 +79,39 @@ a
 .brand
     text-transform: uppercase
 
+.badge-primary
+    background-color: $primary-color
+
+.card
+    border-radius: 0
+
+.code-block
+    margin: 1em 0
+    border: 1px solid $divider-color
+
+    div
+        padding: 6px
+        font-size: small
+        font-weight: bold
+        border-bottom: 1px solid $divider-color
+        text-transform: uppercase
+
+        code
+            float: right
+            color: $primary-color
+            font-weight: bold
+            text-transform: lowercase
+
+    pre
+        margin: 6px
+
+    pre, code
+        display: block
+        color: $content-color
+        font-family: $code-font
+        font-size: 1em
+
 .subheading
-    margin-top: 1.5em
     font-family: $heading-font
     font-size: 1.4rem
     text-transform: uppercase
@@ -99,6 +131,9 @@ a
 
     .fab, .fas
         font-size: 10rem
+
+.endpoint
+    text-transform: none
 
 @media (max-width: 768px)
     h1

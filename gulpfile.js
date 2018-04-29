@@ -58,6 +58,9 @@ gulp.task('images', (cb) => {
 
         gulp.src('./assets/visuals/brand.png'),
         gulp.dest('./public/assets/images/'),
+
+        gulp.src('./assets/visuals/nash.jpg'),
+        gulp.dest('./public/assets/images/'),
     ], cb);
 });
 
